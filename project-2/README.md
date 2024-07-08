@@ -56,6 +56,5 @@ If you encounter issues connecting to the Kubernetes API server, make sure clust
     
 If using Minikube, you can restart Minikube with:
 
-    ```sh
     minikube delete
     minikube start
