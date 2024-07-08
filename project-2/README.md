@@ -46,7 +46,7 @@ Since we are using minikube on local cluster , we can identify IP address via fo
     
     minikube ip
     
-The application should now be accessible at http://\<minikube-ip\>:30000.
+The application should now be accessible at http://minikube-ip:30000.
 
 ## Troubleshooting
 
