@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: time-service-deployment
+  labels:
+    app: time-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: time-service
+  template:
+    metadata:
+      labels:
+        app: time-service
+    spec:
+      containers:
+        - name: time-service
+          image: maahdisrostampoor/time-app:1.0.0
+          ports:
+            - containerPort: 3030
+
