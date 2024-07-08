@@ -48,7 +48,7 @@ Since we are using minikube on local cluster , we can identify IP address via fo
     
 The application should now be accessible at http://minikube-ip:30000.
 
-## Troubleshooting
+## Challenges and Troubleshooting
 
 If you encounter issues connecting to the Kubernetes API server, make sure cluster is running. You can see log of the pod with the following command:
 
@@ -58,3 +58,5 @@ If using Minikube, you can restart Minikube with:
 
     minikube delete
     minikube start
+
+The error I encountered was related to kubernetes API server not running (Connection Refused) and it wasn't fixed by stopping and starting the minikube, I had to delete and start again.
